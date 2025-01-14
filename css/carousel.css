@@ -1,0 +1,40 @@
+/* .carousel-inner {
+    background-color: #f8f9fa; /* Light background to contrast images */
+    /* padding: 20px; */
+    /* box-sizing: border-box; */
+    /* border-radius: 10px; */
+/* }  */
+
+.carouselWrapper {
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    height: 800px; /* Set a height that suits your vertical images */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa; /* Optional: Light background */
+    padding: 20px; /* Optional: Padding around images */
+    box-sizing: border-box;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+.carousel-inner img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner {
+        height: 600px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-inner {
+        height: 400px;
+    }
+}
