@@ -14,7 +14,7 @@
 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-icons.css" rel="stylesheet">
@@ -25,309 +25,188 @@
 
         <link href="css/templatemo-nomad-force.css" rel="stylesheet">
 
-        <!-- <link rel="stylesheet" href="css/carousel.css"> -->
-
-<!--
-
-TemplateMo 567 Bilim ACADEMYA
-
-https://templatemo.com/tm-567-nomad-force
-
--->
+        <!-- Custom Styling -->
+        <style>
+            body {
+                font-family: 'Noto Sans', sans-serif;
+            }
+            .navbar {
+                background-color: #004b8d;
+            }
+            .navbar-brand {
+                font-weight: bold;
+                color: white !important;
+            }
+            .nav-link {
+                color: white !important;
+                margin-right: 15px;
+                transition: color 0.3s;
+            }
+            .nav-link:hover {
+                color: #ffd700 !important;
+            }
+            #about .bg-dark {
+                background-color: #004b8d !important;
+                color: white;
+            }
+            .section-padding {
+                padding: 60px 0;
+            }
+            .carousel-inner img {
+                width: 100%;
+                height: auto;
+            }
+            h2 {
+                color: #004b8d;
+            }
+            .carousel-caption {
+                background: rgba(0, 0, 0, 0.6);
+                color: white;
+                padding: 10px;
+                border-radius: 5px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .bright-caption {
+                background: #1e90ff;
+                color: white;
+                padding: 15px;
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            #contact .contact-info p {
+                font-size: 18px;
+                line-height: 1.8;
+            }
+            footer {
+                background-color: #004b8d;
+                color: white;
+                padding: 20px 0;
+                text-align: center;
+            }
+        </style>
     </head>
     
     <body>
     
         <main>
-
-            <!-- <section class="hero" id="hero">
-                <div class="heroText">
-                    <h1 class="text-white mt-5 mb-lg-4" data-aos="zoom-in" data-aos-delay="800">
-                        Bilim ACADEMYA
-                    </h1>
-
-                    <p class="text-secondary-white-color" data-aos="fade-up" data-aos-delay="1000">
-                        республикалық ғылыми-әдістемелік журнал редакциясы
-                    </p>
-                </div>
-
-                <div class="carouselWrapper">
-                    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/cover1.png" class="d-block w-100" alt="Cover 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/cover2.png" class="d-block w-100" alt="Cover 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/cover3.jpeg" class="d-block w-100" alt="Cover 3">
-                            </div>
-                        </div>
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Алдыңғы</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Келесі</span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="overlay"></div>
-            </section> -->
-
-            <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <strong>Bilim ACADEMYA</strong>
-                    </a>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-brand" href="#">Bilim ACADEMYA</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mx-auto">
-                            
-                            <!-- New Navigation Items -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">Біз туралы</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#chief-editor">Бас редактор</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Контактілер</a>
-                            </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="#license">Лицензия</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#certificates">Сертификаттар</a>
-                            </li> -->
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="#best-articles">Үздік мақалалар</a>
-                            </li> -->
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="#cover">Мұқаба</a>
-                            </li> -->
+                            <li class="nav-item"><a class="nav-link" href="#about">Біз туралы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#chief-editor">Бас редактор</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#articles">Мақалалар</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Контактілер</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
 
-            <section class="section-padding pb-0" id="about">
-                <div class="container-fluid">
+            <!-- About Section -->
+            <section class="section-padding" id="about">
+                <div class="container">
                     <div class="row">
-                        <div class="col-lg-5 col-10 bg-dark">  
-                            <div class="d-flex flex-column flex-wrap justify-content-center h-100 py-5 px-4 pt-lg-4 pb-lg-0">
-                                <p class="text-secondary-white-color" data-aos="fade-up"><strong>Bilim Academya</strong> редакциясы – республикалық ғылыми-әдістемелік журнал шығарумен айналысатын заманауи ақпараттық орталық. Біз білім беру, ғылым және әдістемелік тәжірибенің үздік үлгілерін насихаттау арқылы қоғамның зияткерлік әлеуетін арттыруды мақсат етеміз.</p>
-                            </div>
+                        <div class="col-lg-6">
+                            <h2>Біз туралы</h2>
+                            <p><strong>Bilim Academya</strong> редакциясы – республикалық ғылыми-әдістемелік журнал шығарумен айналысатын заманауи ақпараттық орталық. Біз білім беру, ғылым және әдістемелік тәжірибенің үздік үлгілерін насихаттау арқылы қоғамның зияткерлік әлеуетін арттыруды мақсат етеміз.</p>
+                            <p>Редакциямыздың басты міндеті – педагогика, ғылым және инновация саласындағы өзекті мәселелерді көтеріп, кәсіби мамандарға құнды тәжірибелік құрал боларлықтай мазмұнды ұсыну. Журналымыз ғылыми зерттеулердің нәтижелерін, жаңа әдістемелік тәсілдерді және тәжірибе алмасуға арналған мақалаларды жариялайды.</p>
+                            <p>Біз оқырмандарымызға сапалы ақпарат беру үшін редакцияның әрбір мүшесінің кәсіби білімі мен шығармашылық қабілетін пайдаланамыз. Біздің жұмысымыз – тек мазмұн дайындау ғана емес, ғылым мен білімді дамытуға үлес қосу.</p>
                         </div>
-
-                        <div class="col-lg-5 col-10 p-0">  
-                            <section id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="col-lg-6">
+                            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <div class="text-center">
-                                            <img src="images/cover1.png" class="img-fluid team-image mx-auto" alt="" style="width: 50%; height: 50%;">
-                                        </div>
-
-                                        <div class="team-thumb bg-primary">
-                                            <h3 class="text-white mb-0">Ақпан басылымы</h3>
+                                        <img src="images/cover1.png" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption bright-caption">
+                                            Ақпан 2025
                                         </div>
                                     </div>
-
                                     <div class="carousel-item">
-                                        <div class="text-center">
-                                            <img src="images/cover2.png" class="img-fluid team-image mx-auto" alt="" style="width: 50%; height: 50%;">
-                                        </div>
-
-                                        <div class="team-thumb bg-success">
-                                            <h3 class="text-white mb-0">Қырқүйек басылымы</h3>
+                                        <img src="images/cover2.png" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption bright-caption">
+                                            Қыркүйек 2024
                                         </div>
                                     </div>
-
                                     <div class="carousel-item">
-                                        <div class="text-center">
-                                            <img src="images/cover3.jpeg" class="img-fluid team-image mx-auto" alt="" style="width: 50%; height: 50%;">
-                                        </div>
-
-                                        <div class="team-thumb bg-info">
-                                            <h3 class="text-white mb-0">Желтоқсан басылымы</h3>
+                                        <img src="images/cover3.jpeg" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption bright-caption">
+                                            Желтоқсан 2023
                                         </div>
                                     </div>
                                 </div>
-
-                                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
-                                      <span class="visually-hidden">Previous</span>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
                                 </button>
-
-                                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
-                                      <span class="visually-hidden">Next</span>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
                                 </button>
-                            </section>
-
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="container mb-5 pb-lg-5 pt-lg-5">
-                    <div class="row">
-                        <div class="col-lg-6 col-12 mt-3 mb-lg-5">
-                            <p class="me-4" data-aos="fade-up" data-aos-delay="300">Редакциямыздың басты міндеті – педагогика, ғылым және инновация саласындағы өзекті мәселелерді көтеріп, кәсіби мамандарға құнды тәжірибелік құрал боларлықтай мазмұнды ұсыну. Журналымыз ғылыми зерттеулердің нәтижелерін, жаңа әдістемелік тәсілдерді және тәжірибе алмасуға арналған мақалаларды жариялайды.</p>
-                        </div>
-                        <div class="col-lg-6 col-12 mt-lg-3 mb-lg-5">
-                            <p data-aos="fade-up" data-aos-delay="500">Біз оқырмандарымызға сапалы ақпарат беру үшін редакцияның әрбір мүшесінің кәсіби білімі мен шығармашылық қабілетін пайдаланамыз. Біздің жұмысымыз – тек мазмұн дайындау ғана емес, ғылым мен білімді дамытуға үлес қосу.</p>
-                        </div>
-                    </div>
-                </div>
-
             </section>
 
             <!-- Chief Editor Section -->
             <section class="section-padding bg-light" id="chief-editor">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 text-center mb-5">
-                            <h2 class="mb-3" data-aos="fade-up">Бас редактор</h2>
+                        <div class="col-12 text-center">
+                            <h2>Бас редактор</h2>
                         </div>
-                        <div class="col-lg-4 col-12 mx-auto" data-aos="fade-up" data-aos-delay="200">
-                            <div class="text-center">
-                                <img src="images/bas_redactor.jpg" class="img-fluid rounded-circle mb-4" alt="Chief Editor" style="width: 80%; height: 80%;">
-                            </div>
-                            <h3 class="text-center">Асқарбек Ажар Қайырбекқызы</h3>
-                            <p class="text-center">Бас редактор</p>
-                            <p class="text-center">Педагогика ғылымдарының магистры</p>
+                        <div class="col-lg-4 col-12 mx-auto text-center">
+                            <img src="images/bas_redactor.jpg" class="img-fluid rounded-circle mb-3" alt="Chief Editor">
+                            <h3>Асқарбек Ажар Қайырбекқызы</h3>
+                            <p>Бас редактор</p>
+                            <p>Педагогика ғылымдарының магистры</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- License Section
-            <section class="section-padding" id="license">
+            <!-- Articles Section -->
+            <section class="section-padding" id="articles">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 text-center mb-5">
-                            <h2 class="mb-3" data-aos="fade-up">Лицензия</h2>
+                        <div class="col-12 text-center">
+                            <h2>Мақалалар</h2>
+                            <p>Біздің соңғы мақалаларымызды оқу үшін төмендегі сілтемені басыңыз:</p>
+                            <a href="articles.html" class="btn btn-primary">Барлық мақалаларды көру</a>
                         </div>
-                        <div class="col-lg-6 col-12 mx-auto" data-aos="fade-up">
-                            <img src="images/license.png" class="img-fluid mb-4" alt="License">
-                            <p class="text-center">Bilim ACADEMYA журналының ресми лицензиясы</p>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-
-            <!-- Certificates Section
-            <section class="section-padding bg-light" id="certificates">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 text-center mb-5">
-                            <h2 class="mb-3" data-aos="fade-up">Сертификаттар үлгісі</h2>
-                        </div>
-                        <div class="col-lg-4 col-12 mb-4" data-aos="fade-up">
-                            <img src="images/certificate1.jpg" class="img-fluid rounded" alt="Certificate 1">
-                        </div>
-                        <div class="col-lg-4 col-12 mb-4" data-aos="fade-up" data-aos-delay="200">
-                            <img src="images/certificate2.jpg" class="img-fluid rounded" alt="Certificate 2">
-                        </div>
-                        <div class="col-lg-4 col-12 mb-4" data-aos="fade-up" data-aos-delay="400">
-                            <img src="images/certificate3.jpg" class="img-fluid rounded" alt="Certificate 3">
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-
-            <!-- Best Articles Section -->
-            <!-- <section class="section-padding" id="best-articles">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 text-center mb-5">
-                            <h2 class="mb-3" data-aos="fade-up">Үздік мақалалар</h2>
-                        </div>
-                        <div class="col-lg-6 col-12 mb-4" data-aos="fade-up">
-                            <div class="card">
-                                <img src="images/articles/article1.jpg" class="card-img-top" alt="Article 1">
-                                <div class="card-body">
-                                    <h5 class="card-title">Мақала атауы 1</h5>
-                                    <p class="card-text">Бұл үздік мақала жайлы қысқаша сипаттама.</p>
-                                    <a href="#" class="btn btn-primary">Толығырақ</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="200">
-                            <div class="card">
-                                <img src="images/articles/article2.jpg" class="card-img-top" alt="Article 2">
-                                <div class="card-body">
-                                    <h5 class="card-title">Мақала атауы 2</h5>
-                                    <p class="card-text">Бұл үздік мақала жайлы қысқаша сипаттама.</p>
-                                    <a href="#" class="btn btn-primary">Толығырақ</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-
-            <!-- Cover Section
-            <section class="section-padding bg-light" id="cover">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 text-center mb-5">
-                            <h2 class="mb-3" data-aos="fade-up">Мұқаба</h2>
-                        </div>
-                        <div class="col-lg-6 col-12 mx-auto" data-aos="fade-up">
-                            <img src="images/cover.jpg" class="img-fluid mb-4" alt="Журнал мұқабасы">
-                            <p class="text-center">Bilim ACADEMYA журналының соңғы басылымы</p>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-
-            <!-- Contact Section Updated -->
-            <section class=" contact section-padding" id="contact">
-                <div class="container">
-                    <div class="row">
-                        
-                        <div class="col-lg-7 col-12 mx-auto">
-                            <!-- Contact Information -->
-                            <div class="contact-info mt-5" data-aos="fade-up">
-                                <h4>Байланыс ақпараттары</h4>
-                                <p><i class="bi-geo-alt-fill me-2"></i> Адрес: Астана қаласы</p>
-                                <p><i class="bi-telephone-fill me-2"></i> Телефон: +7 707 321 53 44</p>
-                                <p><i class="bi-envelope-fill me-2"></i> Email: zhurnalprint.kz@mail.ru</p>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </section>
 
+            <!-- Contact Section -->
+            <section class="section-padding" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Контактілер</h2>
+                            <div class="contact-info">
+                                <p><i class="bi-geo-alt-fill me-2"></i>Адрес: Астана қаласы</p>
+                                <p><i class="bi-telephone-fill me-2"></i>Телефон: +7 707 321 53 44</p>
+                                <p><i class="bi-envelope-fill me-2"></i>Email: zhurnalprint.kz@mail.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/aos.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/magnific-popup-options.js"></script>
-        <script src="js/scrollspy.min.js"></script>
-        <script src="js/custom.js"></script>
+        <footer>
+            <p>&copy; 2025 Bilim ACADEMYA. Барлық құқықтар қорғалған.</p>
+        </footer>
 
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
